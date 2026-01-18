@@ -60,7 +60,7 @@ const ProjectCard = ({
             <img
               src={typeof image === 'string' ? image : image.src}
               alt='project_image'
-              className=' h-full w-full object-cover rounded-2xl'
+              className={`h-full w-full rounded-2xl ${name === 'Mobile Phone App' ? 'object-contain' : 'object-cover'}`}
             />
           </div>
         </Tilt>
